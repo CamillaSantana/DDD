@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class Imc {
+
+	public static void main(String[] args) {
+		
+		double peso;
+		double altura;
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Insira o peso: ");
+		peso = in.nextDouble();
+		System.out.println("Insira a altura: ");
+		altura = in.nextDouble();
+		
+		in.close();
+		
+		double imc = (peso)/(altura * 2);
+		
+		System.out.println("O IMC é" + imc);
+		
+		
+	}
+}
